@@ -7,7 +7,6 @@ import {
   TextInput,
   StyleSheet,
 } from 'react-native';
-
 import { LoginButton, AccessToken } from 'react-native-fbsdk-next';
 import useLogin from './useLogin';
 

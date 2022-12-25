@@ -38,7 +38,7 @@ const useChat = () => {
     const collectionRef = collection(database, 'chats');
     const q = query(collectionRef, orderBy('createdAt', 'desc'));
     const unsubcribe = onSnapshot(q, snapshot => {
-      console.log('🚀 snapshot', snapshot);
+      console.log('🚀 snapshot', snapshot.docs[0].data().user);
       setMesssages(
         snapshot.docs.map(doc => ({
           _id: doc.id,

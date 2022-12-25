@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "a-apk": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
